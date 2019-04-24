@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+<p id="demo2" onclick="myFunction2()">Clic.</p>
+
+<script>
+function myFunction() {
+var carName = "Volvo";
+var textDemo = document.getElementById("demo").innerHTML = carName;
+}
+
+function myFunction2() {
+	document.getElementById("demo2").innerHTML = carName;
+}
+</script>
+
+</body>
+</html>

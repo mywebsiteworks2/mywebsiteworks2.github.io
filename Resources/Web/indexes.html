@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>Maju Depot & Logistics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-left:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+li {
+  float: left;
+  vertical-align: middle;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+li a:hover:not(.active) {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-black w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-indigo"><i class="w3-margin-left"></i><img border="0" alt="Maju Depot & Logistics" src="change_this_later.png" width="350" height="50"></a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+      <a href="#" class="w3-bar-item w3-button">Link</a>
+    </div>
+  </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+<div style="padding:20px;margin-top:60px;background-color:#FFFFF;height:1500px;">
+	<h1>Fixed Top Navigation Bar</h1>
+	<h2>Scroll this page to see the effect</h2>
+	<h2>The navigation bar will stay at the top of the page while scrolling</h2>
+	<p>Some text some text some text some text..</p>
+</div>
+
+<script>
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+}
+/* Style the header */
+.header {
+  background-color: #000;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  margin-top:25px;
+}
+.font1{
+	color:white;
+    font-size:36px;
+	font-weight:bold;
+}
+.font2{
+	color:white;
+    font-size:16px;
+	line-height:130%;
+}
+p#cf7_controls {
+    font-size:22px;	
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:40px;
+  }
+  #cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+  
+  #cf7_controls span:hover{
+	background-color: #008;
+	text-align:center;
+  }
+  
+  #cf7 {
+    position:relative;
+    width:100%;
+    margin-top:15px;
+	<!--margin-left:18.5%;-->
+  }
+  #cf7 img {
+    width:100%;
+	position:absolute;
+    left:0;
+    text-align:center;
+	margin-top:5px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #cf7 img.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:19px;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+	z-index: 0;
+	width:40%;
+	text-align:center;
+}
+
+#texts {
+	margin-left:42%;
+}
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+	
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+ #cf7 {
+    position:relative;
+    width:70%;
+    margin-top:15px;
+	margin-left:15%;
+	margin-bottom:50%
+	}
+	
+  
+  #cf7_controls span {
+    padding-right:0.4em;
+    cursor:pointer;
+	text-align:center;
+	float:middle;
+	align:middle;
+  }
+	
+	#texts {
+	margin-left:0;
+}
+ul {
+	font-size:22px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:22px;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  font-size:22px;
+  float: middle;
+  text-align:center;
+}
+li a {
+  font-size:22px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#000">
+
+<div class="header">
+	<img id="logo" src="logo.png" style="background-color:#000;text-align: center;">
+</div>
+
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="">Services</a></li>
+	<li><a class="active" href="#contact">About Us</a></li>
+	<li><a href="#contact">Subsidiaries</a></li>
+	<li><a href="#contact">Clients</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>
+
+ <div id="cf7_controls" style="margin-left:25px;font-size:18px">
+    <span style="color:white" class="selected" onclick = "s1()">Who We Are</span><br>
+    <span style="color:white" class="" onclick = "s2()">Vision & Mission</span>
+
+  </div>
+  
+  <div style="align:middle;" id="cf7">
+		<img src="l1.png"  class="opaque">
+		<img src="l2.png" class="">
+</div>
+
+<div id="texts" style="line-height:130%;">
+	<p id="txt1" class="font2">With more than 25 years of experience, Samudera Pacific Maju are widely known as an asset-based company with comprehensive transportation capabilities. Through the years we have maintained excellent partnerships with global shipping lines, local port administration and customs that ultimately lead us to be an established and reliable logistics service provider in Indonesia.<br>As a provider of full-service logistics operations, we are fully aware of the requirements of modern-day shipping. That's why we offer a wide range of services equipped with computer-based cargo tracking technology, warehousing, container depot, extensive cargo, ship chartering, cargo consolidation, international forwarding and other facilities to ensure high level of satisfaction for both our clients and business partners alike.</p>
+	<p id="txt2" class="font2">Experience is indeed the best teacher. We believe that in order to provide premium quality services, continuous improvement is a must. That's why we never stop to improve ourselves by learning from decades of experience in order to become Indonesia's most efficient and reliable cargo transportation company. With that vision, we carry a mission to emerge Indonesia as a global trading partner by providing quality International standards services to meet the needs of the world market.</p>
+</span></p>
+</div>
+
+<script>
+
+		document.getElementById("cf7").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+
+  $(document).ready(function() {
+    $("#cf7_controls").on('click', 'span', function() {
+      $("#cf7 img").removeClass("opaque");
+      var newImage = $(this).index();
+      $("#cf7 img").eq(newImage).addClass("opaque");
+      $("#cf7_controls span").removeClass("selected");
+      $(this).addClass("selected");
+    });
+  });
+  
+  	function s1() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s2() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt2").style.display = "block";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s3() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt3").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s4() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt4").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s5() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt5").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+	}
+  </script>
+
+</body>
+</html>

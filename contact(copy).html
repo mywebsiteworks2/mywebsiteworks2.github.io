@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+}
+/* Style the header */
+.header {
+  background-color: #000;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  margin-top:25px;
+}
+.font1{
+	color:white;
+    font-size:36px;
+	font-weight:bold;
+}
+.font2{
+	color:white;
+    font-size:16px;
+	line-height:100%;
+}
+p#cf7_controls {
+    font-size:22px;	
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:40px;
+  }
+  #cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+  
+  #cf7_controls span:hover{
+	background-color: #008;
+	text-align:center;
+  }
+  
+  #cf7 {
+    position:relative;
+    width:50%;
+    margin-top:15px;
+	<!--margin-left:18.5%;-->
+  }
+  #cf7 img {
+    width:100%;
+	position:absolute;
+    left:0;
+    text-align:center;
+	margin-top:5px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #cf7 img.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:19px;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+	z-index: 0;
+	width:40%;
+	text-align:center;
+}
+
+#texts {
+	margin-left:0%;
+}
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+	
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+ #cf7 {
+    position:relative;
+    width:70%;
+    margin-top:50000px;
+	margin-left:15%;
+	margin-bottom:50%
+	}
+	
+  
+  #cf7_controls span {
+    padding-right:0.4em;
+    cursor:pointer;
+	text-align:center;
+	float:middle;
+	align:middle;
+  }
+	
+	#texts {
+	margin-left:0;
+}
+
+	#textss {
+	position:absolute;
+}
+
+ul {
+	font-size:22px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:22px;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  font-size:22px;
+  float: middle;
+  text-align:center;
+}
+li a {
+  font-size:22px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#000">
+
+<div class="header">
+	<img id="logo" src="logo.png" style="background-color:#000;text-align: center;">
+</div>
+
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="home.html">Services</a></li>
+	<li><a href="#contact">About Us</a></li>
+	<li><a href="#contact">Subsidiaries</a></li>
+	<li><a href="#contact">Clients</a></li>
+	<li><a class="active" href="">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>
+
+<div id="textss">
+<p style="margin-top:90px;margin-left:55%;font-size:18px;color:white"><strong>Phone No :</strong> +62 21 29 800 300 | +62 21 666 00 909 | +62 21 660 3301</p>
+<p style="margin-left:55%;font-size:18px;color:white"><strong>Fax No :</strong> +62 21 663 2460 | +62 21 662 9541
+</div>
+
+<p style="margin-left:15px;color:white;margin-top:-105px"><strong>Our Branches</strong></p>
+
+  <div id="cf7_controls" style="margin-left:25px;font-size:18px">
+    <span style="color:white" class="selected" onclick = "s1()">Jakarta</span>
+    <span style="color:white" class="" onclick = "s2()">Semarang</span>
+    <span style="color:white" class="" onclick = "s3()">Surabaya</span>
+    <span style="color:white" class="" onclick = "s4()">Makassar</span>
+	<span style="color:white" class="" onclick = "s5()">Medan</span>
+  </div>
+  
+  <div style="align:middle;" id="cf7">
+		<img src=""  class="opaque">
+		<img src="" class="">
+		<img src="" class="">
+		<img src="" class="">
+		<img src="" class="">
+</div>
+
+<div id="texts" style="line-height:80%;">
+    <iframe id="txt1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1047971124503!2d106.77690832196151!3d-6.116592813778425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02bb3acef7ff%3A0x8dba037b0c25aa3b!2sSamudera+Pacific+Maju.+PT!5e0!3m2!1sen!2sid!4v1555576011152!5m2!1sen!2sid" width="100%" height="500px" frameborder="0" style="border:0;margin-top:30px;" allowfullscreen></iframe>
+	<p id="txt2"><span class="font1">Sticky Navigation Bar Example 2<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt3"><span class="font1">Sticky Navigation Bar Example 3<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt4"><span class="font1">Sticky Navigation Bar Example 4<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt5"><span class="font1">Sticky Navigation Bar Example 5<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+</div>
+
+<script>
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+
+  $(document).ready(function() {
+    $("#cf7_controls").on('click', 'span', function() {
+      $("#cf7 img").removeClass("opaque");
+      var newImage = $(this).index();
+      $("#cf7 img").eq(newImage).addClass("opaque");
+      $("#cf7_controls span").removeClass("selected");
+      $(this).addClass("selected");
+    });
+  });
+  
+  	function s1() 
+	{
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s2() 
+	{
+		document.getElementById("txt2").style.display = "block";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s3() 
+	{
+		document.getElementById("txt3").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s4() 
+	{
+		document.getElementById("txt4").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s5() 
+	{
+		document.getElementById("txt5").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+	}
+  </script>
+
+</body>
+</html>

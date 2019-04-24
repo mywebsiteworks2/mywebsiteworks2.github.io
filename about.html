@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+}
+/* Style the header */
+.header {
+  background-color: #000;
+  padding: 0;
+  width: 100%;
+  margin-bottom:0.1%;
+	margin-top:0.1%;
+}
+@keyframes example {
+  from {transform: scale(1.0);}
+  to {transform: scale(1.1);}
+}
+
+.font1{
+	color:white;
+    font-size:36px;
+	font-weight:bold;
+}
+.font2{
+	color:white;
+    font-size:16px;
+	line-height:100%;
+}
+.font3{
+	color:white;
+    font-size:19px;
+	line-height:100%;
+}
+.font4{
+	color:white;
+    font-size:19px;
+	line-height:100%;
+	font-weight:bold;
+	font-style:italic;
+}
+p#cf7_controls {
+    font-size:22px;	
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:40px;
+  }
+  #cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+  
+  #cf7_controls span:hover{
+	font-weight:bold;
+  }
+  
+   #cf7_controls img {
+    width:11%;
+	margin-top:22px;
+  }
+  
+  #cf7_controls img:hover {
+    transform: scale(1.1);
+	animation-name: example;
+  animation-duration: 0.2s;
+  }
+  
+  #cf7 {
+    position:relative;
+    width:100%;
+    margin-top:15px;
+	margin-left:0.2%;
+  }
+  #cf7 img {
+    width:45%;
+	position:absolute;
+    left:0;
+    text-align:center;
+	margin-top:5px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #cf7 img.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:16.5px;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+	z-index: 0;
+	width:31%;
+	text-align:center;
+}
+
+#texts {
+	margin-left:46.6%;
+}
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+
+#txt6 {
+	margin-left:0%;
+}
+	
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+ #cf7 {
+    position:relative;
+    width:70%;
+    margin-top:15px;
+	margin-left:15%;
+	margin-bottom:50%
+	
+	}
+	
+  
+  #cf7_controls span {
+    padding-right:0.4em;
+    cursor:pointer;
+	text-align:center;
+	float:middle;
+	align:middle;
+  }
+  
+      #cf7_controls img {
+    width:23%;
+	margin-bottom:1%;
+	z-index:-1;
+  }
+  
+   #cf7 img {
+    width:100%;
+	margin-bottom:1%;
+  }
+	
+	#texts {
+	margin-left:0;
+}
+ul {
+	font-size:22px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:22px;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  font-size:22px;
+  float: middle;
+  text-align:center;
+}
+li a {
+  font-size:22px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#000">
+
+<div class="header">
+	<img id="logo" src="logo.png" style="background-color:#000;text-align: center;">
+</div>
+
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="home.html">Services</a></li>
+	<li><a class="active" href="">About Us</a></li>
+	<li><a href="#contact">Subsidiaries</a></li>
+	<li><a href="#contact">Clients</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>
+
+<!--<p style="text-align:center;color:white;margin-top:10px;margin-left:-3%"><strong>Available Services</strong> - Click one for more info</p>-->
+
+  <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
+    <span style="color:white;" class="selected" onclick = "s1()"><img src="aboutus-t.png" ></span>
+    <span style="color:white" class="" onclick = "s2()"><img src="vision-t.png" ></span>
+	 <span style="color:white" class="" onclick = "s3()"><img src="aboutus2-t.png" ></span>
+  </div>
+
+<div style="align:middle;margin-bottom:1%;" id="cf7">
+		<img src="serv_it.jpg"  class="opaque">
+		<img src="serv_it.jpg" class="">
+</div>
+
+<div id="texts" style="line-height:80%;margin-bottom:1%;">
+    <p align="justify" id="txt1"><span class="font1">Who we are<br><br></span> <span class="font2">Transmaju Ekspresindo was established in 1991 as a comprehensive overland cargo transportation company. They draw on the extensive facilities and professional resources of the parent company to provide rapid and reliable door to door cargo transportation<br><br><span class="font3"><strong>Transmaju services include :</strong></span><br>1. Urban long-distance trucking<br>2. Brokerage<br>3. Customs clearance
+</span></p>
+	<p align="justify" id="txt2"><span class="font1">Vision & Mission<br><br></span> <span class="font2"><strong>Vision :</strong> To become Indonesia's most efficient and reliable cargo transportation company.<br><br><span class="font2"><strong>Mission :</strong> To expedite in Indonesia's emerging market as a global trading partner by providing international standards of quality and service geared towards the requirements of all the customers.</p>
+
+</span></p>
+	<p align="justify" id="txt3"><span class="font1">Words from the Managing Director<br><br></span> <span class="font2">Dear valued customers / clients,<br><br>On behalf of the Management and Staff of PT. Transmaju Ekspresindo, I am very honored to dedicate the company information available here to all of you - our valued customers / clients.<br><br>As we are aware our existence for nearly one decade, along with the experience in land transportation business are mostly because of you, therefore we would like to thank you for all your support, trust, and co-operation towards our company.<br><br>Valued customers / clients, we learned so much from our mistakes, problems, and experiences that we faced so that we could become as what we are today.<br><br>Last but not least, we commit ourselves to provide our customers with our best service.<br><br>Yours faithfully,<br><br><span class="font4">Sarwan Kumar</span></p>
+	<p id="txt4"></p>
+	<p id="txt5"></p>
+	<p id="txt6"></p>
+</div>
+
+<script>
+
+		document.getElementById("cf7").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+
+  $(document).ready(function() {
+    $("#cf7_controls").on('click', 'span', function() {
+      $("#cf7 img").removeClass("opaque");
+      var newImage = $(this).index();
+      $("#cf7 img").eq(newImage).addClass("opaque");
+      $("#cf7_controls span").removeClass("selected");
+      $(this).addClass("selected");
+    });
+  });
+  
+  	function s1() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s2() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt2").style.display = "block";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s3() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt3").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s4() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt4").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s5() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt5").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s6() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt6").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 10px;
+  width: 100%;
+    transform: translate(30%, -0%);
+	margin-bottom:-1.2%;
+	margin-top:0.4%;
+}
+
+@keyframes example {
+  from {transform: scale(0.96);}
+  to {transform: scale(1.0);}
+}
+
+/* Create 5 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  height: 10%;
+  padding: 10px;
+  transform: scale(0.94);
+}
+
+#drop {
+  text-shadow: 2px 2px 4px #000000;
+  color:black;
+  font-size:32px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column:hover {
+  background-color: #700;
+  transform: scale(1.0);
+ animation-name: example;
+  animation-duration: 0.2s;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+/* Responsive layout - makes the five columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 50%;
+    height: 10%;
+  }
+  }
+
+ #logo {
+    width: 40%;
+    height: 10%;
+  }
+
+@media screen and (max-width:600px) {
+  #logo {
+    width: 100%;
+    height: 10%;
+  }
+  .header {
+    transform: translate(0%, -0%);
+}
+  
+  #drop {
+  text-shadow: 2px 2px 4px #000000;
+  color:black;
+  font-size:22px;
+}
+  }
+ 
+</style>
+</head>
+<body style="background-color:#000">
+
+<div class="header">
+	<img id="logo" src="logo.png" style="background-color:#000">
+</div>
+
+<div class="row">
+  <div class="column">
+    <a target="_self" href="home.html">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="30%"></img>
+	  <div id="drop" class="centered">Services</div>
+    </a>
+  </div>
+  
+  <div class="column">
+    <a target="_self" href="about.html">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered">About Us</div>
+    </a>
+  </div>
+  
+  <div class="column">
+    <a target="_self" href="img_5terre.jpg">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered">Subsidiaries</div>
+    </a>
+  </div>
+  
+  <div class="column">
+    <a target="_self" href="img_5terre.jpg">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered" >Clients</div>
+    </a>
+  </div>
+  
+  <div class="column">
+    <a target="_self" href="contact.html">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered">Contact Us</div>
+    </a>
+  </div>
+  
+  
+
+</body>
+</html>

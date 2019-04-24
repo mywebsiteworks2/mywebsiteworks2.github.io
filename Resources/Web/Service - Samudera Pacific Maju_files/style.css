@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+body { 
+margin: 0 auto;  padding: 0;
+background-color:#f3f3f3;
+}
+
+@font-face { font-family: myriadproreg; src: url('font/myriadproregular.otf'); }
+@font-face { font-family: myriadprolight; src: url('font/myriadprolight.otf'); }
+@font-face { font-family: helvetica; src: url('font/helvetica.ttf'); }
+@font-face { font-family: helveticabold; src: url('font/helveticabold.ttf'); }
+
+#topbg{
+height:100px;
+background:url(images/bg_top.jpg) top center repeat-x;	
+}
+#top{
+width:834px; height:80px; margin: 0 auto; padding:20px 90px 0 100px;
+
+}
+#logo{
+float:left; width:360px; height:60px;
+}
+#menu{
+float:left; width:344px; height:60px; padding:20px 0 0 130px;
+font-family: 'myriadproreg', tahoma ; font-size:17px; color:#5b5b5b;
+text-shadow: 1px 1px 1px #fff;
+}
+#menu a{
+color : #5b5b5b; text-decoration:none; padding:0 10px;
+}
+#menu a:hover{
+color : #2e3094;
+}
+
+#header{
+width:824px; margin: 0 auto; padding:0 100px;	
+}
+#midbg{
+background-color:#2e3094;	
+}
+#middle{
+width:824px; margin: 0 auto; padding:0 100px;
+}
+#content{
+width:824px; margin: 0 auto; margin-top:40px; padding:0 100px;	
+}
+#footbg{
+height:80px; margin-top:30px; background-color:#e0e0e0;
+}
+#footer{
+width:824px; height:20px; margin: 0 auto;  padding:30px 100px;
+font-family: 'helvetica' , helvetica, tahoma ; font-size:11px; color:#6a6a6a;
+}
+
+.mid_title{
+padding:15px 0 10px 0;
+font-family: 'myriadprolight', tahoma ; font-size:30px; color:#fff;
+}
+.mid_text{
+padding:0;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#fff; line-height:18px; padding-bottom:15px; text-align:justify;
+}
+.con_title{
+padding:0 0 20px 0;
+font-family: 'myriadprolight', tahoma ; font-size:30px; color:#777;
+text-shadow: 1px 1px 1px #fff;
+}
+.con_text{
+padding:0;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333; line-height:18px; text-align:justify;
+text-shadow: 1px 1px 1px #fff; padding:0 0 15px 0;
+}
+.design{
+float:right;font-family: 'helvetica', helvetica, tahoma ; font-size:11px; color:#6a6a6a;	
+}
+.design a{
+color : #6a6a6a; text-decoration:none;
+}
+.design a:hover{
+color : #f57e44;
+}
+.con_line{
+width:824px; padding:25px 0 0 0; margin: 0 0 25px 0; border-bottom:1px solid #e5e5e5;	
+}
+.con_title2{
+padding:0 0 20px 120px;
+font-family: 'myriadprolight', tahoma ; font-size:18px; color:#777;
+text-shadow: 1px 1px 1px #fff;	
+}
+.con_bold{
+font-family: 'helveticabold', helvetica, tahoma ; font-size:13px; color:#333;
+}
+/*--------------------------------------------------------------------------- Home -- */
+#hmid_img{
+float:left; padding:0 15px 0 60px;
+}
+#hcon_left{
+float:left; width:320px; padding:0 30px 0 0; margin-right:10px; border-right:1px solid #ccc;	
+}
+/*--------------------------------------------------------------------------- About -- */
+#abtext_left{
+float:left; width:510px; padding:0 50px 0 0;	
+}
+#abcon_left{
+float:left; width:300px; padding:0;
+}
+.abcon_bleft{
+float:left; width:381px; padding:0 30px 0 0;
+}
+.abcon_bright{
+float:left; width:381px; padding:0 0 0 30px;
+}
+.abcon_img{
+float:left; width:120px; padding:0;
+}
+.abcon_txt{
+float:left; width:261px; padding:0;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333; line-height:18px; text-align:justify;
+text-shadow: 1px 1px 1px #fff;
+}
+/*--------------------------------------------------------------------------- Services -- */
+#servcon_left{
+float:left; width:400px; padding:0;
+}
+#servcon_right{
+float:left; width:424px; padding:0;
+}
+#btn_sf{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_sf.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_sf a{width:137px; height:214px; display:block;}
+#btn_sf:hover,#btn_sf.activeSlide  { background-position:137px 0; }
+#btn_af{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_af.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_af a{width:137px; height:214px; display:block;}
+#btn_af:hover,#btn_af.activeSlide  { background-position:137px 0; }
+#btn_it{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_it.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_it a{width:137px; height:214px; display:block;}
+#btn_it:hover,#btn_it.activeSlide  { background-position:137px 0; }
+#btn_c{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_c.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_c a{width:137px; height:214px; display:block;}
+#btn_c:hover,#btn_c.activeSlide  { background-position:137px 0; }
+#btn_cc{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_cc.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_cc a{width:137px; height:214px; display:block;}
+#btn_cc:hover,#btn_cc.activeSlide  { background-position:137px 0; }
+#btn_cdw{
+float:left;
+width:137px; height:214px; padding:0; margin:0;
+text-decoration:none;
+background-image: url(images/btn_cdw.jpg);
+background-position:0 0; cursor:pointer;
+}
+#btn_cdw a{width:137px; height:214px; display:block;}
+#btn_cdw:hover,#btn_cdw.activeSlide  { background-position:137px 0; }
+/*--------------------------------------------------------------------------- Contact -- */
+.ctmid_img{
+float:left; width:40px; height:80px; padding:0;
+}
+.ctmid_txt1{
+float:left; width:234px; height:55px; padding:25px 30px 0 0;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#fff; line-height:18px;
+}
+.ctmid_txt2{
+float:left; width:220px; height:50px; padding:30px 30px 0 0;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#fff; line-height:18px;
+}
+.ctmid_txt3{
+float:left; width:178px; height:50px; padding:30px 0 0 10px;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#fff; line-height:18px;
+}
+.ctcon_left{
+float:left; width:320px;padding:0;	
+}
+.ctcon_right{
+float:left; width:434px;padding:0 0 0 70px;	
+}
+.ctcon_img{
+float:left; width:50px; padding:0 15px 0 0;
+}
+
+.ctcon_title{
+padding:5px 0 20px 0;
+font-family: 'myriadprolight', tahoma ; font-size:30px; color:#777;
+text-shadow: 1px 1px 1px #fff;
+}
+.ctcon_address{
+width:318px; margin:20px 0 0 0; border-right:1px solid #d3d1d1;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333; line-height:18px;
+}
+.ctform_txt{
+float:left; width:90px; height:22px; padding:10px 0 0 0; margin-bottom:15px;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333;
+}
+.ctform_box{
+float:left; width:330px; height:30px; margin-bottom:15px; border:1px solid #000;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333;
+}
+.ctform_box2{
+float:left; width:326px; height:100px; margin-bottom:15px; border:1px solid #000;
+font-family: 'helvetica', helvetica, tahoma ; font-size:13px; color:#333;resize:none;
+}
+.bt_form{
+float:right; height:31px; margin:5px 10px 0 5px; 
+}
+.contactmsg p{margin: 0;}.contactmsg{width: 400px;padding:10px;-moz-border-radius:5px;-webkit-border-radius:5px;-khtml-border-radius:5px;border-radius:5px;margin-bottom:10px;-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);box-shadow:inset 0 1px 0 rgba(255,255,255,0.5)}
+.contactmsg p{line-height:1.5em}
+.contactmsg.error{border:1px solid #eeb7ba;background:#fae2e2;background:-webkit-gradient(linear,left top,left bottom,from(#fae2e2),to(#f2cacb));background:-moz-linear-gradient(top,#fae2e2,#f2cacb);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae2e2',endColorstr='#f2cacb');color:#be4741;text-shadow:0 1px 0 #fff}
+.contactmsg.success{border:1px solid #b8c97b;background:#e5edc4;background:-webkit-gradient(linear,left top,left bottom,from(#e5edc4),to(#d9e4ac));background:-moz-linear-gradient(top,#e5edc4,#d9e4ac);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5edc4',endColorstr='#d9e4ac');color:#3f7227;text-shadow:0 1px 0 #fff}
+.contactmsg.info {border: 1px solid #cadcea;background: #e1f2fc;background: -webkit-gradient(linear, left top, left bottom, from(#e1f2fc), to(#cae9fd));background: -moz-linear-gradient(top,  #e1f2fc,  #cae9fd);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1f2fc', endColorstr='#cae9fd');color: #225b86;text-shadow: 0 1px 0 #fff;}

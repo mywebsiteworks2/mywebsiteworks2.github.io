@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+}
+/* Style the header */
+.header {
+  background-color: #000;
+  padding: 0;
+  width: 100%;
+  margin-bottom:0.1%;
+	margin-top:0.1%;
+}
+.font1{
+	color:white;
+    font-size:36px;
+	font-weight:bold;
+}
+.font2{
+	color:white;
+    font-size:16px;
+	line-height:100%;
+}
+p#cf7_controls {
+    font-size:22px;	
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:40px;
+  }
+  #cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+  
+  #cf7_controls span:hover{
+	font-weight:bold;
+  }
+  
+  #cf7 {
+    position:relative;
+    width:50%;
+    margin-top:15px;
+	<!--margin-left:18.5%;-->
+  }
+  #cf7 img {
+    width:100%;
+	position:absolute;
+    left:0;
+    text-align:center;
+	margin-top:5px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #cf7 img.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:16.5px;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+	z-index: 0;
+	width:35.4%;
+	text-align:center;
+}
+
+#texts {
+	margin-left:1.8%;
+	margin-top:0%
+}
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+
+#textss {
+	z-index:-1;
+	margin-left:1.8%;
+	margin-top:0%;
+}
+	
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+ #cf7 {
+    position:relative;
+    width:100%;
+    margin-top:10%;
+	margin-left:15%;
+	margin-bottom:5%
+	}
+	
+	#cf7_controls {
+    font-size:24px;
+	margin-top:0%;
+	margin-bottom:2%;
+  
+  #cf7_controls span {
+    padding-right:0.4em;
+    cursor:pointer;
+	text-align:center;
+	float:middle;
+	align:middle;
+  }
+	
+	#texts {
+	position:absolute;
+	margin-left:0;
+	margin-top:0;
+}
+
+	#textss {
+	position:relative;
+	margin-top:-6.5%;
+	margin-left:0%;
+}
+
+#txt1 {
+	margin-left:0%;
+
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+
+ul {
+	font-size:22px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:22px;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  font-size:22px;
+  float: middle;
+  text-align:center;
+}
+li a {
+  font-size:22px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#000">
+
+<div class="header">
+	<img id="logo" src="logo.png" style="background-color:#000;text-align: center;">
+</div>
+
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="home.html">Services</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="#contact">Subsidiaries</a></li>
+	<li><a href="#contact">Clients</a></li>
+	<li><a class="active" href="">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>
+
+<div id="textss">
+<p style="font-size:18px;color:white"><strong>Phone No :</strong> +62 21 29 800 300 | +62 21 666 00 909 | +62 21 660 3301</p>
+<p style="font-size:18px;color:white;margin-top:-1%"><strong>Fax No :</strong> +62 21 663 2460 | +62 21 662 9541</p>
+</div>
+
+
+<p id="cf7_controls" style="color:white;margin-left:1.8%;text-align:left;margin-bottom:1%;font-size:26px"><strong>Maju Depo Logistik</strong></p><p style="margin-left:1.8%;margin-top:-1%;margin-bottom:0.5%;font-size:20px;color:white">Address : Cakung CIlincing no 168, Jakarta Utara, Jakarta, RT.11/RW.4, Semper Bar., Cilincing, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 13910</span></p>
+
+  <div id="cf7_controls" style="font-size:18px;;margin-left:2%"">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15867.905187975917!2d106.933584!3d-6.133887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0a292ab49208ac4!2sForward+Logistics+Depot!5e0!3m2!1sen!2sid!4v1556001688810!5m2!1sen!2sid" width="99%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  
+  <div style="align:middle;" id="cf7">
+		<img src=""  class="opaque">
+		<img src="" class="">
+		<img src="" class="">
+		<img src="" class="">
+		<img src="" class="">
+</div>
+
+<div id="texts" style="line-height:80%">
+   
+	 <p id="txt2" ><p>
+	 <p id="txt3" ><p>
+	 <p id="txt4" ><p>
+	 <p id="txt5" ><p>
+</div>
+
+<script>
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+
+  $(document).ready(function() {
+    $("#cf7_controls").on('click', 'span', function() {
+      $("#cf7 img").removeClass("opaque");
+      var newImage = $(this).index();
+      $("#cf7 img").eq(newImage).addClass("opaque");
+      $("#cf7_controls span").removeClass("selected");
+      $(this).addClass("selected");
+    });
+  });
+  
+  	function s1() 
+	{
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s2() 
+	{
+		document.getElementById("txt2").style.display = "block";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s3() 
+	{
+		document.getElementById("txt3").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s4() 
+	{
+		document.getElementById("txt4").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s5() 
+	{
+		document.getElementById("txt5").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+	}
+  </script>
+
+</body>
+</html>
