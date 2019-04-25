@@ -14,10 +14,10 @@ body {
 	margin-left:-0.5%;
 	margin-right:-0.5%;
   background-repeat: no-repeat, repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
@@ -51,7 +51,7 @@ body {
 }
 p#cf7_controls {
     font-size:22px;	
-
+	text-align:center;
 	margin-top:10px;
 	margin-bottom:40px;
   }
@@ -65,10 +65,9 @@ p#cf7_controls {
   }
   
    #cf7_controls img {
-    width:10%;
-	margin-top:10px;
+    width:9.7%;
+	margin-top:29px;
 	  animation-fill-mode: forwards;
-	  margin-left:2%;
   }
   
   #cf7_controls img:hover {
@@ -217,7 +216,6 @@ img {
   
       #cf7_controls img {
     width:23%;
-	margin-top:3.3%;
 	margin-bottom:1%;
 	z-index:-1;
   }
@@ -263,23 +261,25 @@ li a {
 </head>
 <body style="background-color:#002">
 
-	<!--<img id="logo2" src="logoz.png" style="background-color:#000;text-align: center">-->
 <div class="header">
 	<img id="logo" src="logo.png" style="text-align: center;">
-	<img id="logo2" src="logo22.png">
+		<img id="logo2" src="logo22.png">
 </div>
+
 
 
 <ul>
 	<li><a href="index.html">Home</a></li>
 	<li><a href="home.html">Services</a></li>
 	<li><a class="active" href="">About Us</a></li>
-	<li><a href="ab2.html">Contact Us</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
 	<!--<li style="float:right"><a href="#contact">ID</a></li>
 	<li style="float:right"><a href="#contact">EN</a></li>-->
 </ul>
 
- <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
+<!--<p style="text-align:center;color:white;margin-top:10px;margin-left:-3%"><strong>Available Services</strong> - Click one for more info</p>-->
+
+  <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
     <span style="color:white;" class="selected" onclick = "s1()"><img src="aboutus-t.png" ></span>
     <span style="color:white" class="" onclick = "s2()"><img src="vision-t.png" ></span>
 	 <span style="color:white" class="" onclick = "s3()"><img src="aboutus2-t.png" ></span>

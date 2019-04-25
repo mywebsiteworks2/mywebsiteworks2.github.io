@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+	padding:0;
+}
+
+.header {
+  background-image: url("head.jpg");
+	margin-top:-0.5%;
+	margin-left:-0.5%;
+	margin-right:-0.5%;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #200;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:17px;
+			margin-left:-0.5%;
+	margin-right:-0.5%;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+	z-index: 0;
+	width:35%;
+	text-align:center;
+	margin-top:0.5%;
+		margin-left:0.5%;
+}
+#logo2 {
+	z-index: -1;
+	width:20%;
+	float:right;
+	margin-top:0.9%;
+	margin-right:2%;
+}
+
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+
+ul {
+	font-size:32px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #200;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  float: middle;
+  text-align:center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#002">
+<div class="header">
+	<img id="logo" src="logo.png" style="text-align: center;">
+	<img id="logo2" src="logo22.png">
+</div>
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="">Services</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a class="active" href="contact.html">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>

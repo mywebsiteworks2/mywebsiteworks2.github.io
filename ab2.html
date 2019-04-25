@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+body {
+	font-size: 28px;
+	padding:0;
+}
+
+.header {
+  background-image: url("head.jpg");
+	margin-top:-0.5%;
+	margin-left:-0.5%;
+	margin-right:-0.5%;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+@keyframes example {
+   0% {transform: scale(1.0);}
+   100% {background-color:#000;}
+  100% {transform: scale(1.1);}
+  100% {background-color:#200;}
+}
+.font1{
+	color:white;
+    font-size:26px;
+	font-weight:bold;
+}
+.font2{
+	color:white;
+    font-size:16px;
+	line-height:100%;
+}
+.font3{
+	color:white;
+    font-size:19px;
+	line-height:100%;
+}
+.font4{
+	color:white;
+    font-size:19px;
+	line-height:100%;
+	font-weight:bold;
+	font-style:italic;
+}
+p#cf7_controls {
+    font-size:22px;	
+
+	margin-top:10px;
+	margin-bottom:40px;
+  }
+  #cf7_controls span {
+    padding-right:2em;
+    cursor:pointer;
+  }
+  
+  #cf7_controls span:hover{
+	font-weight:bold;
+  }
+  
+   #cf7_controls img {
+    width:10%;
+	margin-top:10px;
+	  animation-fill-mode: forwards;
+	  margin-left:2%;
+  }
+  
+  #cf7_controls img:hover {
+    transform: scale(1.1);
+	animation-name: example;
+  animation-duration: 0.2s;
+  }
+  
+  #cf7 {
+    position:relative;
+    width:100%;
+    margin-top:15px;
+	margin-left:0.2%;
+  }
+  #cf7 img {
+    width:43%;
+	position:absolute;
+    left:0;
+    text-align:center;
+	margin-top:5px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  
+  #cf7 img.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #200;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	font-size:16.5px;
+		margin-left:-0.5%;
+	margin-right:-0.5%;
+}
+#whitetext {
+	text-color: #fff;
+}
+.w3-display-middle {
+	width:100%;
+	text-align:center;
+	<!--transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%)-->
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #008;
+}
+.active {
+  background-color: #c00;
+}
+img {
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+#logo {
+
+	z-index: 0;
+	width:35%;
+	text-align:center;
+	margin-top:0.5%;
+		margin-left:0.5%;
+}
+
+#texts {
+	margin-left:1%;
+}
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:30%;
+	margin-top:-24%;
+	margin-right:1%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
+
+#txt6 {
+	margin-left:0%;
+}
+
+#logo2 {
+	z-index: -1;
+	width:20%;
+	float:right;
+	margin-top:0.9%;
+	margin-right:2%;
+}
+	
+@media screen and (max-width:1100px) {
+#logo {
+	z-index: 0;
+	width:60%;
+	text-align:center;
+}
+ #cf7 {
+    position:relative;
+    width:70%;
+    margin-top:15px;
+	margin-left:15%;
+	margin-bottom:50%
+	}
+	
+  
+  #cf7_controls span {
+    padding-right:0.4em;
+    cursor:pointer;
+	text-align:center;
+	float:middle;
+	align:middle;
+  }
+  
+      #cf7_controls img {
+    width:23%;
+	margin-bottom:1%;
+	z-index:-1;
+  }
+  
+   #cf7 img {
+    width:100%;
+	margin-bottom:1%;
+  }
+	
+	#texts {
+	margin-left:0;
+	margin-top:0;
+}
+
+#txt3 {
+	margin-left:0%;
+	margin-top:1%;
+	margin-right:1%;
+}
+
+
+ul {
+	font-size:32px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #200;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	text-align:center;
+	float: middle;
+	align:middle;
+}
+li {
+  float: middle;
+  text-align:center;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: middle;	
+}
+}
+	
+</style>
+</head>
+<body style="background-color:#002">
+
+	<!--<img id="logo2" src="logoz.png" style="background-color:#000;text-align: center">-->
+<div class="header">
+	<img id="logo" src="logo.png" style="text-align: center;">
+	<img id="logo2" src="logo22.png">
+</div>
+
+
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="home.html">Services</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a class="active" href="">Contact Us</a></li>
+	<!--<li style="float:right"><a href="#contact">ID</a></li>
+	<li style="float:right"><a href="#contact">EN</a></li>-->
+</ul>
+
+
+
+<div style="align:middle;margin-bottom:1%;" id="cf7">
+		<img src=""  class="opaque">
+		<img src="" class="">
+</div>
+
+<div id="texts" style="line-height:80%;margin-bottom:1%;">
+    <p align="justify" id="txt1"><span class="font1">Contact Numbers<br><br></span> <span class="font2"><strong>Phone No : </strong><br>+62-21 661 0742<br><br><span><strong>Fax No : </strong><br>+62-21 661 2704<br>+62-21 669 7047</span></p>
+	<p align="justify" id="txt2"><span class="font1">Address<br><br></span> <span class="font2">Jl Muara Karang Raya 163-165  Pluit, Penjaringan<br>Jakarta Utara, DKI Jakarta, 14450</span></p>
+	<p id="txt3"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15868.418289576752!2d106.7746691!3d-6.1166231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x109a7ba59a85f179!2sTransmaju+Ekspresindo!5e0!3m2!1sen!2sid!4v1556168267525!5m2!1sen!2sid" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+	<p id="txt4"></p>
+	<p id="txt5"></p>
+	<p id="txt6"></p>
+</div>
+
+<script>
+
+		document.getElementById("cf7").style.display = "none";
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+</body>
+</html>
